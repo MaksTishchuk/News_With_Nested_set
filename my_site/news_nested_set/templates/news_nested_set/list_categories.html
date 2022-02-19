@@ -1,0 +1,24 @@
+{% load mptt_tags %}
+<div class="list-group" style="background-color: white;">
+    <ul style="width:290px; padding-top: 18px;">
+        {% recursetree categories %}
+            <li>
+                <a href="{{ node.get_absolute_url }}" class="list-group-item list-group-item-action">
+                    {{ node.title }}
+                </a>
+                {% if not node.is_leaf_node %}
+                    <ul class="children">
+                        {{ children }}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endrecursetree %}
+    </ul>
+</div>
+
+<!--<div class="list-group">-->
+<!--    {% for category in categories %}-->
+<!--    <a href="{{ category.get_absolute_url }}"-->
+<!--       class="list-group-item list-group-item-action">{{ category.title }}</a>-->
+<!--    {% endfor %}-->
+<!--</div>-->

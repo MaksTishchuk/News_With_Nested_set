@@ -1,0 +1,25 @@
+{% load news_tags %}
+
+{% show_categories %}
+
+
+{% comment %}
+Для simple_tag:
+
+<div class="list-group">
+    {% get_list_categories as categories %}
+    {% for category in categories %}
+    <a href="{{ category.get_absolute_url }}" class="list-group-item list-group-item-action">
+        {{ category.title }}
+        <span class="badge bg-secondary" style='position: absolute; right: 18px;'>
+            {{ category.cnt }}
+        </span>
+    </a>
+    {% endfor %}
+</div>
+{% endcomment %}
+
+{% comment %}
+    Для inclusion_tag из news_tags и шаблона list_categories. Альтернатива simple_tag.
+    {% show_categories %}
+{% endcomment %}

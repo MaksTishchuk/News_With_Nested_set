@@ -1,0 +1,26 @@
+#header {
+    background-color: #304ffe;
+}
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+    color: #ffff00;
+    font-weight: bold;
+}
+
+#user-tools {
+    color: #ffff00;
+}
+
+#header a:link, #header a:visited {
+    color: #ffff00;
+}
+
+div.breadcrumbs {
+    background-color: #ffff00;
+    color: #1a237e;
+}
+
+div.breadcrumbs a {
+    color: #304ffe;
+    text-decoration: underline;
+}

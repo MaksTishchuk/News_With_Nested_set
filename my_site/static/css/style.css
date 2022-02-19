@@ -1,0 +1,17 @@
+body {
+    background-color: #87CEFA;
+}
+.bg-light {
+    background-color: #FFFF00;
+}
+
+.container-fluid {
+    --bs-bg-opacity: 1;
+    background-color: #FFFF00;
+    font-family: URW Chancery L, cursive;
+}
+
+#page {
+    display: flex;
+    justify-content: center;
+}
